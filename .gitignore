@@ -1,8 +1,12 @@
 # Node.js
-node_modules/
+managed_context
+test_suite_analysis
+node_modules
 npm-debug.log
 yarn-error.log
 # vscode
 .vscode/
 # macOS
 .DS_Store
+# gitignore
+.gitignore
