@@ -10,3 +10,9 @@ app.listen(port,()=>{
       console.log("Listening on port ", port);
 });
 
+
+app.use(express.json());
+app.use(express.static(__dirname + '/public'));
+
+let postRoutes = require('./routes/postRoutes')
+app.use('/api/posts', postRoutes)
