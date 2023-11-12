@@ -12,5 +12,6 @@ const getPost = (res) => {
 
 module.exports = {
     getPost,
-    createPost
+    createPost,
+    deletePost
 }
