@@ -9,6 +9,6 @@ post.init({
      title: { type: DataTypes.STRING, allowNull: false, required: true },
      description: { type: DataTypes.STRING, allowNull: false, required: true },
      image: { type: DataTypes.STRING, allowNull: false, required: true},
-}, {sequelize: sequelizeInstance, modelName: 'post', timestamps: true, freezeTableName: true})
+}, {sequelize: sequelizeInstance, modelName: 'posts', timestamps: true, freezeTableName: true})
 
 module.exports = post;
