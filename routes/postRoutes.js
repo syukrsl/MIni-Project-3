@@ -6,4 +6,8 @@ router.get("/", (req, res) => {
     Controllers.postController.getPost(res);
 });
 
+router.post('/', (req, res) => {
+    Controllers.postController.createPost(req.body, res)
+})
+
 module.exports = router;
