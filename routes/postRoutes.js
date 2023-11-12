@@ -10,6 +10,10 @@ router.post('/', (req, res) => {
     Controllers.postController.createPost(req.body, res)
 })
 
+router.put('/:id', (req, res) => {
+    Controllers.postController.updatePost(req.params.id, req.body, res)
+})
+
 router.delete('/:id', (req, res) => {
     Controllers.postController.deletePost(req.params.id, res)
 })
